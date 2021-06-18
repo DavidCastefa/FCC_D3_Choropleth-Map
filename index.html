@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FCC D3 Choropleth Map</title>
+  <script src="https://d3js.org/d3.v6.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/3.0.2/topojson.min.js" integrity="sha512-4UKI/XKm3xrvJ6pZS5oTRvIQGIzZFoXR71rRBb1y2N+PbwAsKa5tPl2J6WvbEvwN3TxQCm8hMzsl/pO+82iRlg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <svg id="canvas">
+  </svg>
+
+  <div id="title-block">
+    <text id="title">College Education in the USA<br></text>
+    <text id="description">Percentage of adults age 25 and older with a bachelor's degree or higher<br>(2010-2014)</text>
+  </div>
+
+  <svg id="legend">
+    <rect y="0" x="0" width="182" height ="17" fill="black"></rect>
+    <rect y="1" x="1" width="30" height ="15" fill="#fcfad2"></rect>
+    <rect y="1" x="31" width="30" height ="15" fill="#c9e3b8"></rect>
+    <rect y="1" x="61" width="30" height ="15" fill="#84cbbb"></rect>
+    <rect y="1" x="91" width="30" height ="15" fill="#48b7c1"></rect>
+    <rect y="1" x="121" width="30" height ="15" fill="#3382b5"></rect>
+    <rect y="1" x="151" width="30" height ="15" fill="#253c90"></rect>
+    <text y="30" x="21" fill="black">10%</text>
+    <text y="30" x="52" fill="black">20%</text>
+    <text y="30" x="82" fill="black">30%</text>
+    <text y="30" x="113" fill="black">40%</text>
+    <text y="30" x="145" fill="black">50%</text>
+  </svg>
+
+  <div id="data-source">
+    <span>Topographical data from 
+      <a href="https://cdn.freecodecamp.org/testable-projects-fcc/data/choropleth_map/counties.json">
+        https://cdn.freecodecamp.org/testable-projects-fcc/data/choropleth_map/counties.json
+      </a>
+      <br>
+    </span>
+    <span>Educactional data from 
+      <a href="https://cdn.freecodecamp.org/testable-projects-fcc/data/choropleth_map/for_user_education.json">
+        https://cdn.freecodecamp.org/testable-projects-fcc/data/choropleth_map/for_user_education.json
+      </a> 
+    </span>
+  </div>
+
+  <div id="signature">
+    <small><i>by David Rhoton, 2021</i></small>
+  </div>
+
+</body>
+<script defer src="script.js"></script>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</html>

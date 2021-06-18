@@ -1,0 +1,74 @@
+*{
+  font-family: roboto;
+}
+
+body{
+  background-color: rgb(248, 242, 246);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#title-block {
+  position: absolute;
+  color: black;
+  padding: 1px 10px;
+  text-align: center;
+  top: 3%;
+}
+
+#title {
+  font-size: 2.5em;
+  font-weight: bold;
+}
+#description {
+  font-size: 1em;
+}
+
+#canvas{
+  position: absolute;
+  top: 80px;
+}
+
+#legend{
+  position: absolute;
+  top: 120px;
+  left: 62%;
+  height: 35px;
+  width: 200px;
+  font-size: .8rem;
+}
+
+#tooltip {
+  position: absolute;
+  border: 1px solid grey;
+  border-radius: 3px;
+  color: black;
+  background-color: rgb(252, 223, 242);
+  padding: 5px;
+  font-size: .8rem;
+  z-index: 2;
+}
+
+.county:hover {fill:rgb(226, 45, 166)}
+
+#data-source {
+  font-size: .6rem;
+  padding: 3px 6px;
+  position: absolute;
+  color: rgb(56, 56, 56);
+  background-color:  rgb(226, 224, 224);
+  border-radius: 3px;
+  top: 700px;
+}
+
+#signature {
+  padding: 3px 6px;
+  position: absolute;
+  top: 735px;
+  color: rgb(56, 56, 56);
+  background-color:  #e6f1de;
+  border-radius: 3px;
+  font-size: .8rem;
+}
